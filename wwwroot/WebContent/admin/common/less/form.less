@@ -1,0 +1,86 @@
+.sapar-form{
+
+}
+
+/*====================================
+  表单样式
+  ===================================*/
+.kv-item{margin-bottom:10px;font-size:12px;}
+.kv-item label,.kv-item .kv-item-label{position:relative;float:left;padding-left:7px;width:6em;height:30px;line-height:30px;text-align: right;}
+.kv-item-content{float:left;}
+.kv-item .input{float:left;width:100%;margin-top:5px;}
+.kv-item .input:first-child{margin-top:0;}
+/*输入框，文本域， 密码输入框样式*/
+.kv-item input[type=text],.kv-item textarea,.kv-item input[type=password],.kv-item input[type=file],.kv-item .file{width:250px;height:28px;border-width:1px;border-style:solid;border-left-color:#c5c5c5;border-top-color:#c5c5c5;border-right-color:#e0e0e0;border-bottom-color:#e0e0e0;*line-height:28px;outline:none;/* background:url(../img/skin_/inputbg.png);*/padding:0 10px;}
+.kv-item input[type=text].error-input,.kv-item textarea.error-input,.kv-item input[type=password].error-input{border:1px solid #e60000;background:#fff2f4;}
+.kv-item textarea{height:80px;overflow-y:auto;resize:none; background:none;padding:5px 10px;}
+.kv-item select{width:271px;height:30px;}
+/*表单中的radio框以及checkbox框的样式*/
+.kv-item .choose{line-height: 30px;margin-right: 10px;}
+.kv-item .choose input[type="checkbox"],.kv-item .choose input[type="radio"]{position: relative;top:2px;*top:1px;}
+/*下拉框样式*/
+
+.iselect-wrapper{position:relative;width:244px;height:28px;padding:0 20px 0 5px;line-height:28px;border-width:1px;border-style:solid;border-left-color:#c5c5c5;border-top-color:#c5c5c5;border-right-color:#e0e0e0;border-bottom-color:#e0e0e0;background:url("@{imgpath}/select_normal.png") no-repeat right center #fff;}
+.iselect-wrapper:hover{background:url("@{imgpath}/select_hover.png") no-repeat right center #fff;}
+.iselect-wrapper .iselect{position:absolute;top:-2px;left:-1px;opacity:0;filter:alpha(opacity=0);outline:0 none;z-index:2;}
+/*一段区域数值输入（比如时间段，数字段等）*/
+.kv-item.interval input[type=text],.kv-item .interval input[type=text]{float:left;width:100px;}
+.kv-item .division{float:left;margin:0 5px;color:#666;}
+/*表单中的提示信息*/
+.kv-item-tip{float:left;margin-left:20px;color:#a5a5a5;height:30px;line-height:30px;}
+.kv-item-tip .tipText{margin-top:1px;}
+.kv-item-tip.error{color:#fc0000;}
+.kv-item-tip.success{color:#5cb85c;}
+.kv-item-tip.warn{color:#f0ad4e;}
+/*.kv-item-tip{margin-left:397px;*margin-left:0;}*/
+.kv-item-tip .ue-icon{margin:2px 8px 0 5px;*margin-left:2px;}
+.kv-item-tip .ue-state-highlight .tipText{color:#FAAB00;}   
+
+.kv-item .file{position:relative;line-height:30px;}
+.kv-item .file input[type=file]{position:absolute;right:0px;z-index:1;width:72px;height:35px; opacity:0;filter:alpha(opacity=0);}
+.kv-item .file input[type=button]{position:absolute;right:0;top:0;width:72px;z-index:0;height:28px;border-top:none;border-bottom:none;border-radius:0;border-right:none;}
+
+select, textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color]{
+	transition:all .5s ease;
+	-moz-transition:all .5s ease;
+	-webkit-transition:all .5s ease;
+	-ms-transition:all .5s ease;
+
+	&:focus{
+		background-color: #fafffe;
+	    border-color: #3bb4f2;
+	    outline: 0;
+	    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px rgba(59,180,242,.3);
+	    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px rgba(59,180,242,.3)
+	}
+}
+
+
+.time-select-wrap{
+	.time-select{
+		float: left;
+		position: relative;
+
+		input[type=text]{
+			padding: 0 16px 0 8px;
+			width: 102px;
+			height: 28px;
+
+
+		}
+
+		.date-icon{
+			position: absolute;
+			right: 6px;
+			top: 1px;
+			width: 16px;
+			height: 28px;
+			background: url("@{imgpath}/dateico.png") no-repeat center center;
+			cursor: pointer;
+		}
+	}
+	.line{
+		float: left;
+		margin: 3px 2px 0;
+	}
+}

@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+a{text-decoration:none;}
+*{ padding:0; margin:0;}
+#homeIco{margin: 19px 0 0 43px;width:177px;height:140px;background-image:url('../images/home.png');float:left;background-repeat:no-repeat;}
+#userInfo{width: 550px;float:left;margin-top:15px; margin-left:-24px;color:#666;}
+#userInfo p{height:25px; line-height:25px;}
+#userInfo h5{ position:relative;height:55px; line-height:55px; margin-bottom:10px;}
+#userInfo h5 .headPic{ width:55px; height:55px;border-radius:50px;margin-bottom:2px; padding:3px; border:2px #CCC solid; background:#FFF;}
+#userInfo h5 .userNick{ position:absolute; top:5px; left:75px; font-size:18px; color:#666;}
+#userInfo h5 .vipIco{ margin-left:5px;}
+#userInfo h5 .upvip{ display:inline-block; width:115px; height:30px; line-height:30px; text-align:center; font-size:14px; font-weight:normal; background:#F8D25B; color:#666;;border-radius:5px; position:absolute; top:10px; right:50px;letter-spacing:2px;box-shadow:0px 1px  1px 0px #666;}/*letter-spacing:字体间距*/
+#userInfo h5 .upvip:hover{ text-decoration:underline;}
+.infoLeft{ width:50%;height:100%; float:left;}
+.infoLeft p{ width:80%; margin:0 auto; height:40px; line-height:40px; border-bottom:1px #CCCCCC dashed; color:#999;}
+.inforight{ width:50%;height:100%; float:left;}
+.inforight p{ width:80%; margin:0 auto; height:40px; line-height:40px; border-bottom:1px #CCCCCC dashed; color:#999;}
+
+.welcome{font-weight: bold;font-family: 微软雅黑;font-size: 18px;}
+.userName{font-weight: bold;font-family: 微软雅黑;font-size: 13px;}
+.userName span{color:#6A8A8C;font-size:16px;font-weight:100;}
+.userMoney{font-weight: bold;font-family: 微软雅黑;font-size: 13px;}
+.userMoney span{color:#6A8A8C;font-size:16px;font-weight: 100;}
+.userMoney span.moneyText{color:#999;font-size:15px;margin-left: 5px;}
+.userMoney span.availText{color:#666;margin-left: 20px;}
+.userMoney .tikuan{ margin-left:10px; font-size:14px; font-weight:normal; color:#093;}
+.userMoney .tikuan:hover{ text-decoration:underline; color:#F00;}
+
+.vipForm{ width:80%; height:300px; margin:50px auto; border:2px #CCCCCC dotted;}
+.vipForm p{ text-indent:20px; height:35px; line-height:35px; font-weight:bold; font-size:14px; color:#999;}
+.vipForm dl{ width:100%;overflow:hidden;}
+.vipForm dl dd{ width:48%; margin-left:2%; float:left;text-indent:50px; height:50px; line-height:50px; font-weight:bold; font-size:14px; color:#09F;}
+.vipForm dl dd img{ width:30px; height:30px; margin-right:10px; position:relative; top:10px;}
+.vipForm dl dd input{ position:relative; top:3px; margin-right:5px;width:16px; height:16px;}
+.vipForm p input.vpiBtn{width: 280px;
+    height: 45px;
+    line-height: 45px;
+    background:#4C9FF0;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    filter: alpha(opacity:80);
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+	}
+.vipForm p input.vpiBtn:hover{ background: #06F;}
+
+.formBox{ width:80%; height:300px; margin:50px auto; border:2px #CCCCCC dotted;}
+.formBox h3{ height:30px; line-height:30px; margin-top:10px; text-align:center; color:#CC3;}
+.formBox h3 a{ text-decoration:underline; color:#999;}
+.formBox h3 a:hover{color:#06F}
+.formBox form{width:500px; margin:0 auto;margin-top:10px;}
+.formBox form dl{height:45px;line-height:45px; margin-top:20px;}
+.formBox form dl dt{ width:100px; float:left; text-align:right; color:#999; font-size:16px;}
+.formBox form dl dd{ width:400px; float:left; text-align:left; font-size:12px;color:#999; position:relative;}
+.formBox form dl dd a{font-size:12px; margin-left:10px; color:#F33;}
+.formBox form dl dd input{ width:300px; height:40px; text-indent:10px;line-height:40px; }
+.formBox form dl.btn dd input{ background:#25B136; color:#FFF; height:45px; line-height:45px; font-size:18px; border-radius:5px; font-weight:bold; border:none;filter:alpha(opacity:80); opacity:0.8;  -moz-opacity:0.8;-khtml-opacity: 0.8;}
+.formBox form dl.btn dd input:hover{filter:alpha(opacity:100); opacity:1;  -moz-opacity:1;-khtml-opacity: 1;}
+
+.bankBox{ display:none; width:80%; height:300px; margin:50px auto; border:2px #CCCCCC dotted;}
+.bankBox h3{ height:30px; line-height:30px; margin-top:10px; text-align:center; color:#CC3;}
+.bankBox h3 a{ color:#999;}
+.bankBox h3 a:hover{color:#06F}
+.bankBox form{width:500px; margin:0 auto;}
+.bankBox form dl{height:35px;line-height:35px; margin-top:10px;}
+.bankBox form dl dt{ width:100px; float:left; text-align:right; color:#999; font-size:16px;}
+.bankBox form dl dd{ width:400px; float:left; text-align:left; font-size:12px;color:#999; position:relative;}
+.bankBox form dl dd a{font-size:12px; margin-left:10px; color:#F33;}
+.bankBox form dl dd input{ width:300px; height:30px; text-indent:10px;line-height:30px; }
+.bankBox form dl.btn dd input{ background:#09F; color:#FFF; height:35px; line-height:35px; font-size:18px; border-radius:5px; font-weight:bold; border:none;filter:alpha(opacity:80); opacity:0.8;  -moz-opacity:0.8;-khtml-opacity: 0.8;}
+.bankBox form dl.btn dd input:hover{filter:alpha(opacity:100); opacity:1;  -moz-opacity:1;-khtml-opacity: 1;}

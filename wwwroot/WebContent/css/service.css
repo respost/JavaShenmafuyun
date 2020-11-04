@@ -1,0 +1,29 @@
+/* 在线客服css代码*/
+#service{position:fixed;right:10px;top:300px;z-index:100;width:110px;height:272px;}
+#service .qq-a{display:block;width:106px;height:116px;font-size:14px;color:#0484cd;text-align:center;position:relative;}
+#service .qq-a span{bottom:5px;position:absolute;width:90px;left:10px;}
+#service .qq-hover-c{width:70px;height:70px;border-radius:35px;position:absolute;left:18px;top:10px;overflow:hidden;z-index:9;}
+#service .qq-container{z-index:99;position:absolute;width:109px;height:118px;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom:1px solid #dddddd;background:url(../images/service/qq-icon-bg.png) no-repeat center 8px;}
+#service .img-qq{max-width:50px;display:block;position:absolute;left:10px;top:5px;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;-o-transition:all 0.5s;transition:all 0.5s;}
+#service .im-qq:hover .img-qq{max-width:70px;left:1px;top:8px;position:absolute;}
+#service .im_main{background:#F9FAFB;border:1px solid #dddddd;border-radius:10px;background:#F9FAFB;display:none;}
+#service .im_main .im-tel{color:#000000;text-align:center;width:109px;height:105px;border-bottom:1px solid #dddddd;}
+#service .im_main .im-tel p{font-weight:bold;font-size:12px;margin-top:6px; line-height:20px;}
+#service .im_main .im-tel .tel-num{font-family:Arial;font-weight:bold;color:#e66d15;}
+#service .im_main .im-tel:hover{background:#fafafa;}
+#service .im_main .weixing-container{cursor:pointer;width:55px;height:47px;border-right:1px solid #dddddd;background:#f5f5f5;border-bottom-left-radius:10px;background:url(../images/service/weixing-icon.png) no-repeat center center;float:left;}
+#service .im_main .weixing-show{width:112px; display:none;height:172px;background:#ffffff;border-radius:10px;border:1px solid #dddddd;position:absolute;left:-125px;top:-126px;}
+#service .im_main .weixing-show .weixing-sanjiao{width:0;height:0;border-style:solid;border-color:transparent transparent transparent #ffffff;border-width:6px;left:112px;top:134px;position:absolute;z-index:2;}
+#service .im_main .weixing-show .weixing-sanjiao-big{width:0;height:0;border-style:solid;border-color:transparent transparent transparent #dddddd;border-width:8px;left:112px;top:132px;position:absolute;}
+#service .im_main .weixing-show .weixing-ma{width:104px;height:103px;padding-left:5px;padding-top:5px;}
+#service .im_main .weixing-show .weixing-txt{position:absolute;top:110px;left:7px;width:100px;margin:0 auto;}
+#service .im_main .weixing-show .weixing-txt p{text-align:center; font-size:13px; line-height:25px;}
+#service .im_main .go-top{width:50px;height:47px;background:#f5f5f5;border-bottom-right-radius:10px;background:url(../images/service/totop-icon.png) no-repeat center center;float:right;}
+#service .im_main .go-top a{display:block;width:52px;height:47px;}
+#service .close-im{position:absolute;right:10px;top:-12px;z-index:100;width:24px;height:24px;}
+#service .close-im a{display:block;width:24px;height:24px;background:url(../images/service/close_im.png) no-repeat left top;}
+#service .close-im a:hover{text-decoration:none;}
+#service .open-im{cursor:pointer;margin-left:68px;width:40px;height:133px;background:url(../images/service/open_im.png) no-repeat left top;}
+
+#audioBtn{cursor:pointer;display:block; width:56px;height:50px; margin-left:-5px; background:url(../images/service/musicBtn.gif) 0 0 no-repeat;}
+#audioBtn.pause{background-position:0 bottom}

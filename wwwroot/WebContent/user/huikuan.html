@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>银行汇款</title>
+<style type="text/css">
+body,button,input,select,textarea,td,th{font-family: Verdana,"Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","黑体",Arial,sans-serif; font-size: 12px}
+*{margin: 0; padding: 0}
+ol,ul,li{list-style: none}
+img{border: 0;}
+a{text-decoration: none; outline: 0 none}
+a:hover{text-decoration: underline; color: #900}
+p{ text-align:center;}
+
+.wrap{width: 800px}
+.wrap table{background: #b5d6e6}
+.wrap table tr td{ height:30px;line-height: 30px; background-color: #fff;text-indent:5px;}
+.wrap .tic{color: #000; text-align: center; background-color: #e4edf9; font-weight:bold; color:#F00;}
+.wrap .tic td{background-color: #e4edf9}
+.wrap .list{text-align: center}
+.wrap .list:hover td{background-color: #ffffa2;}
+.wrap .bg{background-color: #e4edf9}
+.blue{ color:blue}
+.wrap table tr td input{ width:150px; height:20px; line-height:20px;}
+.wrap table tr td select{ width:154px; height:25px; line-height:25px; } 
+.wrap table tr td .btn{ width:65px; height:21px;border:none; background:url(images/submit.gif) 0 0 no-repeat;vertical-align:middle;}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+<table width="100%" border="0" cellpadding="0" cellspacing="1">
+        <tr class="tic">
+            <td colspan="7">请选择以下公司账号进行转账汇款</td>
+        </tr>
+
+            <tr class="list">
+                <td><img src="bank/gsyh.jpg" width="107" height="24" /></td>
+                <td>中国工商银行：</td>
+                <td><span class="blue">6217996110007435446</span></td>
+                <td>开户名：</td>
+                <td><span class="blue">韦小宝</span></td>
+                <td>开户行所在城市：</td>
+                <td class="blue">广西桂林</td>
+            </tr>
+       <tr>
+            <td colspan="7">
+                <p><strong>温馨提示：</strong>在金额转出之后请务必填写该页下方的汇款信息表格，以便财务系统能够及时的为您确认并添加金额到您的会员帐户中。</p>
+            </td>
+        </tr>
+    </table>
+    <form  action="" method="post">
+        <table width="100%" border="0" cellpadding="0" cellspacing="1" class="mt10">
+            <tr class="tic">
+                <td colspan="2">请认真填写以下汇款单</td>
+            </tr>
+            <tr>
+                <td class="bg" width="22%" align="right">用户账号：</td>
+                <td>anyang</td>
+            </tr>
+            <tr>
+                <td class="bg" align="right">存款金额：</td>
+                <td><input  type="text"  id="money"  maxlength="10"/></td>
+            </tr>
+            <tr>
+                <td class="bg" align="right">汇款银行：</td>
+                <td>
+                    <select id="bank" name="bank" >
+                        <option value="" selected="selected">==请选择汇款银行==</option>
+                      	<option value="0">中国工商银行</option>
+                        <option value="1">中国建设银行</option>
+                        <option value="2">中国农业银行</option>
+                        <option value="3">中国邮政储蓄银行</option>
+                        <option value="4">中国银行</option>
+                        <option value="5">招商银行</option>
+                        <option value="6">中信银行</option>
+                        <option value="7">平安银行</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg" align="right">汇款日期：</td>
+                <td>
+              <input type="text" class="dateinput" placeholder="请选择日期" id="date">
+                </td>
+            </tr>
+            <tr>
+                <td class="bg" align="right">汇款方式：</td>
+                <td>
+                    <select id="inType" name="inType">
+                        <option value="">==请选择汇款方式==</option>                   
+                        <option value="ATM转账">ATM转账</option>
+                        <option value="银行柜台">银行柜台</option>
+                        <option value="网银转账">网银转账</option>
+                    </select>
+                </td>
+            </tr>
+            <tr >
+                <td class="bg" align="right">汇款人姓名：</td>
+                <td><input  type="text"  maxlength="20" /></td>
+            </tr>
+            <tr>
+
+                <td class="bg" align="right">汇款地点：</td>
+                <td><input type="text"  maxlength="50" /></td>
+            </tr>
+            <tr>
+                <td class="bg" align="right"></td>
+                <td height="50">
+                    <button  class="btn" type="button" ></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+ </div>   
+<script type="text/javascript" src="../layer/laydate/laydate.js"></script> <!-- 改成你的路径 -->
+<script type="text/javascript">
+//执行一个laydate实例
+laydate.render({
+  elem: '#date'
+  ,type: 'datetime'
+});
+</script>
+</body>
+</html>

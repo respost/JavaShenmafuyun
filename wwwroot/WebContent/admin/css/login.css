@@ -1,0 +1,76 @@
+*{margin:0;padding:0;}
+html {
+   height: 100%;width:99.99%; 
+}
+body {
+	
+    display: block;
+    background: url(../img/bg.jpg) repeat 50% 50%;
+    overflow: hidden;
+}
+li{list-style: none;}
+img{border:0;}
+a{text-decoration:none;}
+
+.loginmain {
+    z-index: 888;
+    height: 340px;
+    width: 540px;
+    position: absolute;
+    margin-left: -270px;
+    margin-top: -170px;
+    left: 50%;
+    top: 50%;
+    background: #808080;
+    opacity: .3;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: -moz-linear-gradient(left, #F00, #0F0,#00F, #FF0,#0FF, #FF00FF);
+    background: -webkit-linear-gradient(left, #F00, #0F0, #00F, #FF0, #0FF, #FF00FF);
+    background: -o-linear-gradient(left,#F00, #0F0, #00F, #FF0, #0FF, #FF00FF);
+}
+
+.row-fluid {
+    z-index: 999;
+    text-align: center;
+    opacity: .8;
+    height: 320px;
+    width: 520px;
+    position: absolute;
+    margin-left: -260px;
+    margin-top: -160px;
+    left: 50%;
+    top: 50%;
+    background: #FFF;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: -moz-linear-gradient(top, #FFF, #CCC);
+    background: -webkit-linear-gradient(top, #FFF, #CCC);
+    background: -o-linear-gradient(top, #FFF, #CCC);
+}
+
+#clouds {
+    height: 350px;
+    background: url(../img/cloud.png) no-repeat transparent;
+}
+
+.row-fluid h1 {
+    margin-top:30px;
+    color: #0b9cd3;
+    font-family: fzqt;
+}
+.row-fluid p{ height:33px; line-height:33px; margin-top:20px; font-size:13px;}
+.row-fluid p input{ width:200px; height:28px; line-height:28px;}
+.row-fluid p input#code{width:130px;}
+.row-fluid hr {
+    width: 80%;
+    border: none;
+    margin: 20px auto;
+    height: 1px;
+    background: -moz-linear-gradient(left, #CDDBE1, #FFF,#CDDBE1);
+    background: -webkit-linear-gradient(left,#CDDBE1, #FFF,#CDDBE1);
+    background: -o-linear-gradient(left,#CDDBE1, #f00,#CDDBE1);
+}
+.row-fluid .btn{ width:100px; height:35px; margin-left:20px;}
+.row-fluid p.pcode {margin-left: -5px; margin-top:10px;}
+.imgcode {position:relative;top:10px;height:33px; line-height:33px; margin:0 7px;}

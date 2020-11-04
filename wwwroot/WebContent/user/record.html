@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>最近浏览</title>
+<link rel="stylesheet" href="../layer/page/layui.css"  media="all">
+<style type="text/css">
+*{ padding:0; margin:0;}
+#main{padding:20px 20px 0px 20px;}
+table{width:100%;margin:0 auto;border-collapse:collapse;}
+th{height:35px;line-height:35px;text-align:center;border:1px solid #ccc; color:#999; font-size:13px;}
+th{background:#eee;font-weight:normal;}
+ul{width:100%;margin:0 auto;}
+ul li{ list-style-type:none; margin-top:2px;border:1px #ccc solid;list-style:none;font-size:13px;height:35px; line-height:35px;overflow:hidden; background:#F8FAFF;}
+ul li:nth-child(even){background:#fff;}
+ul li:hover{ background:#F3FF7B; cursor:pointer;}
+ul li span.number{width:50px;float:left;text-align:center; display:inline-block; border-right:1px #ccc solid;}
+ul li span.date{width:150px;float:right;text-align:center; display:inline-block; border-left:1px #ccc solid;}
+ul li span.title{width:550px;text-indent:10px; display:inline-block;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+
+#page{float:right;}
+.layui-box span.empty_record{ background:#4DA2FD; color:#FFF; border-radius:5px; margin-right:5px; cursor:pointer;}
+.layui-box span.empty_record:hover{background:#3485FB;}
+</style>
+</head>
+<body>
+
+
+<div id="main">
+    <table>
+      <tr>
+        <th width="50px">序号</th>
+        <th width="550px">源码标题</th>
+        <th width="150px">浏览时间</th>
+      </tr>
+    </table>
+	<ul class="tasks table-sort">
+	<li><span class="number">1</span> <span class="title">借贷系统借款分期含支付，支持二次开发借贷系统借款分期含支付，支持二次开发借贷系统借款分期含支付，支持二次开发</span> <span class="date">2017-12-1</span></li>	
+ 	<li><span class="number">2</span> <span class="title">2017最新小高教学网网站至尊版源码下载-资源分享娱乐</span> <span class="date">2017-12-1</span></li>
+    <li><span class="number">3</span> <span class="title">第三方API支付平台程序源码各类充值卡批量回收寄售</span> <span class="date">2017-12-1</span></li>
+    <li><span class="number">4</span> <span class="title">2017最新小高教学网网站至尊版源码下载-资源分享娱乐</span> <span class="date">2017-12-1</span></li>
+    <li><span class="number">5</span> <span class="title">安卓手机锁机软件制作技术暴利赚钱</span> <span class="date">2017-12-1</span></li>
+    <li><span class="number">6</span> <span class="title">限时特价）带授权工具-傲玩至尊版手机棋 牌+游戏</span> <span class="date">2017-12-1</span></li>	
+    <li><span class="number">7</span> <span class="title">限时特价）带授权工具-傲玩至尊版手机棋 牌+游戏</span> <span class="date">2017-12-1</span></li>		
+	</ul>
+	<div id="page">
+	  
+	   			   <div class="layui-box layui-laypage layui-laypage-default" id="laypage">
+	   			   <span class="empty_record">清空全部记录</span>
+				   <a href="javascript:;" class="layui-laypage-prev layui-disabled" data-page="0">上一页</a>
+				   <a href="javascript:;" >1</a>
+				   <a href="javascript:;" >2</a>
+				   <a href="javascript:;" >3</a>
+				   <a href="javascript:;" >4</a>
+				   <a href="javascript:;" >5</a>
+				   <span class="layui-laypage-spr">…</span>
+				   <a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="10">10</a>
+				   <a href="javascript:;" class="layui-laypage-next" data-page="2">下一页</a>
+				   <span class="layui-laypage-limits"></span>
+				   <span class="layui-laypage-skip">到第<input type="text" min="1" value="1" class="layui-input">页<button type="button" class="layui-laypage-btn">确定</button></span>
+				   </div>
+   </div>
+</div>		
+<body>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../jquery/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>  
+<script type="text/javascript">
+ $(function(){			
+	$('.tasks').sortable({
+		opacity:0.8,
+		revert:true,
+		forceHelperSize:true,
+		placeholder: 'draggable-placeholder',
+		forcePlaceholderSize:true,
+		tolerance:'pointer',
+		stop: function( event, ui ) {
+				$(ui.item).css('z-index', 'auto');
+		}
+	});
+				
+ });
+</script>   
+</body>
+</html>

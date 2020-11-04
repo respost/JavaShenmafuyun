@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+/*top*/
+#top{ width:100%; height:30px; margin-top:3px; font-size:12px;background-size:100%;min-width:1200px;color:#fff;}/*min-width:1200px可以解决页面缩小时，背景色没铺满的问题*/
+#topbox{ width:1200px; height:30px; margin:0 auto;}
+.top_left{ width:120px;height:30px;float:left; }
+.top_left ul li{ float:left; width:50px;height:30px;line-height:30px; margin-right:10px; cursor:pointer;}
+.top_right{width:1080px;float:left;height:30px;}
+.top_right ul li{float:right;height:30px;line-height:30px; margin-left:10px;cursor:pointer;text-align: center;}
+.top_right ul li a {color:#FFF;}
+.top_right ul li.changeSkin{background:url(../images/module.png) -75px -38px no-repeat;text-indent:30px;padding-right: 10px;}
+.top_right ul li.skin_open{background:#F2F2F2 url(../images/module.png) -75px -38px no-repeat;color:#000;}
+/*skin*/
+#myskin{ width:100%; height:380px; display:none;background:#F2F2F2;border-bottom:1px #CCCCCC solid;}
+#skinbox{ width:1200px;height:380px; margin:0 auto;}
+#skinbox ul{ width:670px; padding-left:80px;float:left;padding-top:20px;}
+#skinbox ul li{ float:left; margin-right:50px;margin-bottom:10px; text-align:center; position:relative;}
+#skinbox ul li img{ width:100px; height:70px; border:5px #FFFFFF solid; cursor:pointer;}
+#skinbox ul li:hover img{border:5px #00CCFF solid;}
+#skinbox ul li p{ font-size:12px; color:#666;}
+#skinbox ul li span.select{width: 24px;height: 24px;overflow: hidden;background: url(../images/select.png) no-repeat;cursor: pointer;position: absolute;top: -6px;right: -2px;}
+#skinbox div{ width:450px;float:left; text-align:center;}
+#skinbox div dl dt img{width:300px; height:196px; margin-top:30px; border:5px #FFFFFF solid;}
+#skinbox div dl dd{ text-align:center; line-height:55px; font-size:14px;}
+#skinbox div dl dd input{margin-left:10px; width:80px; height:30px; text-align:center; color:#999; font-weight:bold; line-height:30px; background:url(../images/sprites.png) -83px -230px no-repeat; border:none;}
+#skinbox div dl dd input:hover{ background-position:0px -230px; color:#FFF; cursor:pointer;}
+/*header*/
+#header{ width:1200px; height:120px; margin:0 auto;}
+#logo{ 
+	width:260px; 
+	height:120px; 
+	float:left;
+	overflow:hidden;
+	position: relative;/*位置样式必须为relative或者absolute，才能使用jQuery的动画实现位移*/
+}
+#logo img{ width:100%; height:120px;}
+
+#search{ 
+	width:495px;
+ 	height:50px;
+	float:left;
+	padding:20px 0px 0px 45px;
+ 	position: relative;/*位置样式必须为relative或者absolute，才能使用jQuery的动画实现位移*/
+ }
+.search_txet{ width:403px;height:40px; border:none;float:left;background:#FBFBFB;}
+.search_txet input{width:403px;height:38px; line-height:38px;float:left; border:1px #CCCCCC solid; color:#999;text-indent:10px;position: relative;}
+.search_btn{ width:90px; height:40px;line-height:40px;background:#2087ed;color:#FFF; border:none; text-align:center; float:left;cursor: pointer;}
+.search_txet ul{
+width:403px;
+padding:0px;
+margin:0px;
+position:absolute;
+top:58px;
+left:45px;
+z-index: 999;
+background: #FFF;
+border:1px #CCCCCC solid; 
+border-top:none;
+display: none;
+}
+.search_txet ul li{
+border-bottom:1px solid #EEE;
+width:100%;
+height:40px;
+line-height:40px;
+text-indent:10px;
+margin:0px;
+text-overflow:ellipsis; /*溢出时变为省略*/
+overflow:hidden;
+}
+.search_txet ul li:hover{background:#F7F7F7;}
+.search_txet ul li a{width:100%;height:40px; display:block;color:#999;font-size: 13px;}
+.search_txet ul li:hover a{ color:#09F;}
+
+#nav{ width:895px;height:50px;float:left;padding-left:45px;}
+#nav ul li{ width:90px; float:left;height:40px; text-align:center; margin-right:10px;line-height:40px; position:relative;}
+#nav ul li a{font-size:16px; color:#666;font-weight:bold;text-align:center;}
+
+#tag{
+	 width:370px;
+	 height:65px;
+	 float:right; 
+	 padding-left:30px;
+	 padding-top:4px;
+	 position: relative;/*位置样式必须为relative或者absolute，才能使用jQuery的动画实现位移*/
+	 }
+#tag dl{ width:50px; height:65px;float:left; padding-left:20px;}
+#tag dl img{width:40px; height:40px;  position:relative; left:5px;}
+#tag dl.beat:hover{ 
+	float:left; 
+ 	transform:translate(0px,-5px);/*平移，第一个px参数为x轴，第二个px参数为y轴*/
+	-ms-transform:translate(0px,-5px);/*兼容IE9浏览器*/
+	-webkit-transform:translate(0px,-5px);/*兼容谷歌浏览器*/
+	-o-transform:translate(0px,-5px);/*兼容opera浏览器*/
+	-moz-transform:translate(0px,-5px);/*兼容火狐浏览器*/
+ }
+#tag dl dd{color:#999; font-size:12px;text-align:left; text-align:center; cursor:pointer;}
+#tag .headPic{ margin-top:3px;margin-left: 3px;}
+#tag .headPic img{ width:35px; height:35px;border-radius:50px;margin-bottom:2px;}
+#tag .headFont{width:72px;text-align:left;}
+#tag .headFont:hover{ color:#F00;}
+#tag .headFont img{ width:12px; height:6px;position:relative; top:-3px;}
+#tag .headFont span{overflow: hidden; text-align:center;white-space: nowrap; text-overflow: ellipsis;max-width:50px; display:inline-block;}
+#userNav{
+	display:none;
+	width: 100px;
+    background: #fff;
+    position: absolute;
+    font-size: 13px;
+    text-align: left;
+    -moz-box-shadow: 0 0 6px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,.2);
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+    border: 1px solid #ddd;
+    right: 0;
+    top: 70px;
+	text-align:center;
+	z-index:999;
+	}
+#userNav a{width: 90px; height:30px; line-height:30px; float:left;color:#333; text-align:left; padding-left:10px;}
+#userNav a:hover{background-color:#f2f2f2;color:#000}
+#userNav a .lnIco{width:18px; height:18px;line-height:18px; margin-right:5px;position:relative;top:3px;display: inline-block;background:url(../images/codeicon.png) -81px 0px no-repeat;}
+#userNav a .Ico_user{background-position:-81px 0px;}
+#userNav a .Ico_recharge{background-position:-44px 0px;}
+#userNav a .Ico_msg{background-position:-21px 0px;}
+#userNav a .Ico_exit{background-position:-320px 0px;}
+#newMsg{ color:#F00;}

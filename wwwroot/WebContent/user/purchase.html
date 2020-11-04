@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>已购资源</title>
+<link rel="stylesheet" type="text/css" href="page/css/page.css" />
+<style type="text/css">
+*{ padding:0; margin:0;}
+#main{padding:20px 20px 0px 20px;}
+</style>
+</head>
+<body>
+<div id="main">
+<table class="table table-border table-bordered table-hover table-bg table-sort">
+		<thead>
+			<tr class="text-c">
+				<th width="30">ID</th>
+				<th>标题</th>
+				<th width="80">分类</th>
+				<th width="50">价格</th>
+				<th width="150">购买时间</th>
+				<th width="50">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="text-c">
+				<td>1</td>
+				<td class="text-l">冬云云计算程序，IDC互联终端程序源码</td>
+				<td>JSP源码</td>
+				<td>200.00</td>
+				<td>2014-6-11 02:00:18</td>
+				<td class="td-status"><span class="label label-success radius">查看</span></td>
+			</tr>
+			<tr class="text-c">
+				<td>2</td>
+				<td class="text-l">1905电影网源码，高端大气上档次</td>
+				<td>JSP源码</td>
+				<td>200.00</td>
+				<td>2014-6-11 02:00:18</td>
+				<td class="td-status"><span class="label label-success radius">查看</span></td>
+			</tr>	
+			<tr class="text-c">
+				<td>3</td>
+				<td class="text-l">全新开发易玩网页游戏源码</td>
+				<td>JSP源码</td>
+				<td>200.00</td>
+				<td>2014-6-11 02:00:18</td>
+				<td class="td-status"><span class="label label-success radius">查看</span></td>
+			</tr>	
+			<tr class="text-c">
+				<td>4</td>
+				<td class="text-l">仿7K7K小游戏源码</td>
+				<td>JSP源码</td>
+				<td>200.00</td>
+				<td>2014-6-11 02:00:18</td>
+				<td class="td-status"><span class="label label-success radius">查看</span></td>
+			</tr>
+			<tr class="text-c">
+				<td>5</td>
+				<td class="text-l">多图网源码</td>
+				<td>JSP源码</td>
+				<td>200.00</td>
+				<td>2014-6-11 02:00:18</td>
+				<td class="td-status"><span class="label label-success radius">查看</span></td>
+			</tr>
+			<tr class="text-c">
+				<td>6</td>
+				<td class="text-l">7477网页游戏源码</td>
+				<td>JSP源码</td>
+				<td>200.00</td>
+				<td>2014-6-11 02:00:18</td>
+				<td class="td-status"><span class="label label-success radius">查看</span></td>
+			</tr>	
+			<tr class="text-c">
+				<td>7</td>
+				<td class="text-l">王者荣耀视频网源码</td>
+				<td>JSP源码</td>
+				<td>200.00</td>
+				<td>2014-6-11 02:00:18</td>
+				<td class="td-status"><span class="label label-success radius">查看</span></td>
+			</tr>	
+			<tr class="text-c">
+				<td>8</td>
+				<td class="text-l">冬云云计算程序，IDC互联终端程序源码</td>
+				<td>JSP源码</td>
+				<td>200.00</td>
+				<td>2014-6-11 02:00:18</td>
+				<td class="td-status"><span class="label label-success radius">查看</span></td>
+			</tr>	
+			<tr class="text-c">
+				<td>9</td>
+				<td class="text-l">冬云云计算程序，IDC互联终端程序源码</td>
+				<td>JSP源码</td>
+				<td>200.00</td>
+				<td>2014-6-11 02:00:18</td>
+				<td class="td-status"><span class="label label-success radius">查看</span></td>
+			</tr>
+			<tr class="text-c">
+				<td>10</td>
+				<td class="text-l">冬云云计算程序，IDC互联终端程序源码</td>
+				<td>JSP源码</td>
+				<td>200.00</td>
+				<td>2014-6-11 02:00:18</td>
+				<td class="td-status"><span class="label label-success radius">查看</span></td>
+			</tr>	
+			<tr class="text-c">
+				<td>11</td>
+				<td class="text-l">冬云云计算程序，IDC互联终端程序源码</td>
+				<td>JSP源码</td>
+				<td>200.00</td>
+				<td>2014-6-11 02:00:18</td>
+				<td class="td-status"><span class="label label-success radius">查看</span></td>
+			</tr>
+			<tr class="text-c">
+				<td>12</td>
+				<td class="text-l">冬云云计算程序，IDC互联终端程序源码</td>
+				<td>JSP源码</td>
+				<td>200.00</td>
+				<td>2014-6-11 02:00:18</td>
+				<td class="td-status"><span class="label label-success radius">查看</span></td>
+			</tr>					
+				
+	</table>
+</div>		
+<script type="text/javascript" src="page/js/jquery.min.js"></script> 
+<script type="text/javascript" src="page/js/jquery.dataTables.min.js"></script><!--包含“从当前数据中检索：”内容-->
+<script type="text/javascript">
+$(function(){
+	$('.table-sort').dataTable({
+		/*基本参数设置，以下参数设置和默认效果一致*/ 
+		"bStateSave": true,//状态保存,保存当前页面信息为cookie		
+        "bPaginate": true, //翻页功能 
+		"iDisplayLength" : 5, //默认显示的记录数 		
+        "bLengthChange": true, //显示"每页显示多少条"
+		"lengthMenu": [[4, 5, 6, 7], [4, 5, 6, 7]],
+        "bFilter": true, //过滤功能        
+        "bInfo": true,//页脚信息  
+        "bAutoWidth": true,//自动宽度 
+		"searching" : true, //搜索框开关 		
+		/*排序设置*/
+		"//bSort": true, //排序功能  
+		"aoColumnDefs": [
+		  //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+		  //{"orderable":false,"aTargets":[0,8,9]}// 制定列不参与排序
+		], 
+		/*默认排序设置*/  
+        "aaSorting": [[ 0, "desc" ]],//设置第1个元素为默认排序
+		/*默认翻页样式设置*/  
+        "sPaginationType": "full_numbers", //包括：simple,simple_numbers,full,full_numbers
+		/*语言设置*/  
+        "oLanguage": {  
+          "sLengthMenu": "每页显示 _MENU_条",  
+          "sZeroRecords": "没有找到符合条件的数据",  
+          "sProcessing": "<img src=’./loading.gif’ />",  
+          "sInfo": "当前第 _START_ - _END_ 条　共计 _TOTAL_ 条",  
+          "sInfoEmpty": "没有记录",  
+          "sInfoFiltered": "(从 _MAX_ 条记录中过滤)",  
+          "sSearch": "搜索：",  
+          "oPaginate": {  
+                "sFirst": "首页",  
+                "sPrevious": "上一页",  
+                "sNext": "下一页",  
+                "sLast": "尾页"  
+                }
+		}
+	});
+	
+});
+
+</script>   
+</body>
+</html>

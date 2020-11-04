@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+/*footer*/
+#footer{ width:100%; clear:both; height:335px; margin-top:10px;}
+#link{width:1198px; height:70px; margin:20px auto;}
+#link h1{ height:30px; line-height:30px; font-size:16px; color:#666;}
+#link ul li{ float:left; padding:10px 10px 10px 0px;}
+#link ul li:hover{filter:alpha(opacity:50); opacity:0.5;  -moz-opacity:0.5;-khtml-opacity: 0.5;}
+#footup{ width:100%; height:270px; background:url(../images/footer_box.png) center no-repeat;min-width:1200px;}
+#footdown{width:100%; height:120px; background:#2E2E3D;min-width:1200px; position:relative;}
+.footlogo{ width:100%; height:200px; text-align:center; position:absolute; top:-270px; left:0px; z-index:5;min-width:1200px;}
+.footlogo a img{
+	transition:all 0.8s ease-in-out;/*过渡的触发机制，慢动作*/
+	-ms-transition:all 0.8s ease-in-out;/*兼容IE9浏览器*/
+	-webkit-transition:all 0.8s ease-in-out;/*兼容谷歌浏览器*/
+	-o-transition:all 0.8s ease-in-out;/*兼容opera浏览器*/
+	-moz-transition:all 0.8s ease-in-out;/*兼容火狐浏览器*/
+}
+.footlogo a img:hover{
+    transform:rotate(360deg) scale(1.05);/*2D旋转 deg参数为旋转的角度*/
+	-ms-transform:rotate(360deg) scale(1.05);/*兼容IE9浏览器*/
+	-webkit-transform:rotate(360deg) scale(1.05);/*兼容谷歌浏览器*/
+	-o-transform:rotate(360deg) scale(1.05);/*兼容opera浏览器*/
+	-moz-transform:rotate(360deg) scale(1.05);/*兼容火狐浏览器*/*/
+}
+#footbox{ width:1200px; margin:0 auto; padding:30px 0px 20px 0px;}
+.footdown_left{ width:600px; float:left;}
+.footdown_left ul li{ float:left; padding-right:10px;}
+.footdown_left ul li a{ font-size:13px; color:#FFF;}
+.footdown_left p{ clear:both;padding-top:10px;font-size:13px; color:#CCC;}
+.footdown_right{ width:600px; float:left;}
+.footdown_right ul li{ float:right; padding-left:10px;}
+#fixed_left{
+	width: 140px;
+    height: 140px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    z-index: 10;
+    -webkit-transition: bottom 1s;
+    -moz-transition: bottom 1s;
+    -ms-transition: bottom 1s;
+    -o-transition: bottom 1s;
+    transition: bottom 1s;
+	background:url(../images/fixed_left.png) 0 0 no-repeat;
+}
+#backtop {
+    z-index: 10;
+    position: fixed;
+    display: none;
+    margin: -30px 0 0 15px;
+    width: 40px;
+    cursor: pointer;
+	right: 0px; 
+	visibility: visible; 
+	bottom: 100px; 
+	opacity: 1;
+}
+
+#backtop a {
+    display: block;
+    width: 30px;
+    height: 80px;
+    padding: 0;
+    line-height: 12px;
+    text-align: center;
+    color: #787878;
+    text-decoration: none;
+    background: url(../images/scrolltop_1.png) 0 0 no-repeat;
+}
+#backtop a img {
+    position: absolute;
+    width: 16px;
+    height: 30px;
+    top: 37px;
+    left: 7px;
+	display: inline-block; height: 21px; overflow: hidden;
+}

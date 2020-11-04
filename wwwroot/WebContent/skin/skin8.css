@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+/*skin8*/
+body{ background:#7CE2E7;min-width:1200px;}
+#allPage{ background:#F4F8FB url(images/skin8.jpg) 0 0 repeat-x;}
+#top{background:#7CE2E7; color:#333;}
+#nav ul li.current{border-bottom:3px #0AA solid;}
+#nav ul li.current a{color:#0AA;}
+#nav ul li:hover{border-bottom:3px #0AA solid;}
+
+#tag dl:hover dd{color:#124B8E;}
+
+#codelist{ border-top:2px solid #7CE2E7;}
+.codeItem_content h3:hover a{ color:#06F;}
+.codeItem_content ul li a:hover{ color:#06F;}
+
+#login{border-top:2px solid #7CE2E7;}
+.h5_current{ border-bottom:2px #7CE2E7 solid;}
+
+#newupdate{ border-top:2px solid #7CE2E7; }
+#newupdate ul li:hover{ background:#7CE2E7;}
+#newupdate ul li:hover a{ color:#FFF;}
+
+#ranking{  border-top:2px solid #7CE2E7;}
+.h6_current{ background:#FFF;color:#0AA;}
+
+.footdown_left ul li:hover a{ color:#0CF;}
+#link h1{ border-bottom:3px solid #7CE2E7;}

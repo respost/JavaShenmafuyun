@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+/*skin2*/
+body{ background:#DD9B11;min-width:1200px;}
+#allPage{ background:#F2EDE7 url(images/skin2.jpg) top center no-repeat;}
+#top{background:#DD9B11;}
+#nav ul li.current{border-bottom:3px #E1B94A solid;}
+#nav ul li.current a{ color:#DD9B11;}
+#nav ul li a{ color:#666;}
+#nav ul li:hover{border-bottom:3px #E1B94A solid;}
+
+#tag dl:hover dd{color:#F90;}
+#tag dl dd{ color:#000;}
+
+#codelist{ border-top:2px solid #E1B94A;}
+.codeItem_content h3:hover a{ color:#F60;}
+.codeItem_content ul li a:hover{ color:#F60;}
+
+#login{border-top:2px solid #E1B94A;}
+.h5_current{ border-bottom:2px #FF9900 solid;}
+
+#newupdate{ border-top:2px solid #E1B94A; }
+#newupdate ul li:hover{ background:#E1B94A;}
+#newupdate ul li:hover a{ color:#FFF;}
+
+#ranking{  border-top:2px solid #E1B94A;}
+.h6_current{background:#FFF; color:#F60;}
+
+.footdown_left ul li:hover a{ color:#F90;}
+#link h1{ border-bottom:3px solid #F90;}

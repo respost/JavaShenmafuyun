@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../../common/css/title.css" />
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<link rel="stylesheet" type="text/css" href="../../common/css/common.css" />
+<title>系统设置</title>
+
+</head>
+
+<body>
+    <div id="saper-container">
+        <div id="saper-hd"></div>
+        <div id="saper-bd">
+            <div class="subfiled clearfix">
+                <h2>基本参数设置</h2>
+            </div>
+            <div class="subfiled-content">
+                <div class="tab-container" data-trigger="hover">
+                    <div class="tab">
+                        <a href="javascript:;" class="current">站点设置</a>
+                        <!-- 以后再开发 
+						<a href="javascript:;">邮件服务器</a>                      
+                        <a href="javascript:;">核心设置</a>
+                        <a href="javascript:;">附件设置</a>
+                        <a href="javascript:;">会员设置</a>
+                        <a href="javascript:;">支付设置</a>
+                        -->
+                    </div>
+                    <div class="tab-content">
+		 <!--站点设置-->
+         <div class="tab-content-item">
+		 <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+         <tr>
+           <th width="131" align="right">名称</th>
+           <th>内容</th>
+         </tr>
+          <tr>
+			  <td align="right">站点名称</td>
+			  <td><input type="text" name="site_name"  size="80" class="inpMain" /></td>
+         </tr>
+          <tr>
+			  <td align="right">站点标题</td>
+			  <td><input type="text" name="site_title"  size="80" class="inpMain" /></td>
+         </tr>
+          <tr>
+			  <td align="right">站点关键字</td>
+			  <td><input type="text" name="site_keywords"  size="80" class="inpMain" /></td>
+         </tr>
+          <tr>
+			  <td align="right">站点描述</td>
+			  <td><input type="text" name="site_description"  size="80" class="inpMain" /></td>
+         </tr>
+          <tr>
+			  <td align="right">站点标志</td>
+			  <td><input type="file" name="site_logo" size="18" /></td>
+         </tr>
+          <tr>
+			  <td align="right">公司地址</td>
+			  <td><input type="text" name="site_address"  size="80" class="inpMain" /></td>
+         </tr>
+          <tr>
+			  <td align="right">是否关闭网站</td>
+			  <td>
+			  	<label for="site_closed_y"><input type="radio" name="site_closed" id="site_closed_y" value="1">是</label>
+				<label for="site_closed_n"><input type="radio" name="site_closed" id="site_closed_n" value="0" checked="true">否</label>&nbsp;&nbsp;
+			  </td>
+         </tr>
+          <tr>
+			  <td align="right">ICP备案证书号</td>
+			  <td><input type="text" name="icp"  size="80" class="inpMain" /></td>
+         </tr>
+          <tr>
+			  <td align="right">客服电话</td>
+			  <td><input type="text" name="tel"  size="80" class="inpMain" /></td>
+         </tr>
+         <tr>
+          <td align="right">传真</td>
+          <td><input type="text" name="fax" size="80" class="inpMain" /></td>
+         </tr>
+          <tr>
+			  <td align="right">客服QQ号码</td>
+			  <td><input type="text" name="qq"  size="80" class="inpMain" /></td>
+         </tr>
+          <tr>
+			  <td align="right">邮件地址</td>
+			  <td><input type="text" name="email"  size="80" class="inpMain" /></td>
+         </tr>
+          <tr>
+			  <td align="right">启用站点地图</td>
+			  <td>
+			   <label for="sitemap_y"><input type="radio" name="sitemap" id="sitemap_y" value="1" checked="true">是</label>
+			  <label for="sitemap_n"><input type="radio" name="sitemap" id="sitemap_n" value="0">否</label>&nbsp;&nbsp;		 
+			  </td>
+         </tr>
+          <tr>
+			  <td align="right">启用验证码</td>
+			  <td>
+			   <label for="captcha_y"><input type="radio" name="captcha" id="captcha_y" value="1" checked="true">是</label>
+			  <label for="captcha_n"><input type="radio" name="captcha" id="captcha_n" value="0">否</label>&nbsp;&nbsp;		  
+			  </td>
+         </tr>
+          <tr>
+			  <td align="right">统计/客服代码调用</td>
+			  <td><textarea name="code" cols="83" rows="5" class="textArea" /></textarea></td>
+         </tr>
+		  <tr class="tr_btn">
+			  <td width="131"></td>
+			  <td>
+			   <input name="submit" class="btn" type="submit" value="提交" />
+			  </td>
+         </tr>
+        </table>
+        </div>
+		<!--邮件服务器-->
+        <div class="tab-content-item">
+		<table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+         <tr>
+           <th width="131" align="right">名称</th>
+           <th>内容</th>
+         </tr>
+          <tr>
+          <td align="right">邮件服务</td>
+			  <td>
+				 <label for="mail_service_0"><input type="radio" name="mail_service" id="mail_service_0" value="0" checked="true">系统内置Mail服务</label>
+				  <label for="mail_service_1"><input type="radio" name="mail_service" id="mail_service_1" value="1">SMTP服务</label>
+				 <span class="cue ml">如果选择系统内置Mail服务则以下SMTP有关信息无需填写</span>
+			  </td>
+         </tr>
+          <tr>
+			  <td align="right">SMTP服务器</td>
+			  <td><input type="text" name="mail_host" value="smtp.domain.com" size="80" class="inpMain" />
+				  <p class="cue">一般邮件服务器地址为：smtp.domain.com，如果是本机则对应localhost即可</p>
+			  </td>
+         </tr>
+          <tr>
+			  <td align="right">服务器端口</td>
+			  <td><input type="text" name="mail_port" value="25" size="80" class="inpMain" />
+			  </td>
+         </tr>
+          <tr>
+			  <td align="right">是否使用SSL安全协议</td>
+			  <td>
+			   <label for="mail_ssl_1"><input type="radio" name="mail_ssl" id="mail_ssl_1" value="1">是</label>
+			   <label for="mail_ssl_0"><input type="radio" name="mail_ssl" id="mail_ssl_0" value="0" checked="true">否</label>
+			  </td>
+         </tr>
+          <tr>
+			  <td align="right">发件邮箱</td>
+			  <td><input type="text" name="mail_username" value="" size="80" class="inpMain" /></td>
+         </tr>
+          <tr>
+			  <td align="right">发件邮箱密码</td>
+			  <td><input type="text" name="mail_password" value="" size="80" class="inpMain" /></td>
+         </tr>
+		 <tr class="tr_btn">
+			  <td width="131"></td>
+			  <td>
+			   <input name="submit" class="btn" type="submit" value="提交" />
+			  </td>
+         </tr>
+         </table>			 
+         </div>
+						<!--核心设置-->
+                        <div class="tab-content-item">
+							<div class="alert alert-danger" role="alert"><!--在这里写功能--></div> 
+                        </div>
+						<!--附件设置-->
+                        <div class="tab-content-item">
+							<div class="alert alert-danger" role="alert"><!--在这里写功能--></div> 
+                        </div>
+						<!--会员设置-->
+                        <div class="tab-content-item">
+ 							<div class="alert alert-danger" role="alert"><!--在这里写功能--></div> 
+                        </div>
+						<!--支付设置-->
+                        <div class="tab-content-item">
+							<div class="alert alert-danger" role="alert"><!--在这里写功能--></div>                         
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="saper-ft"></div>
+    </div>
+<script type="text/javascript" src="../../common/js/jquery.js"></script>
+<script type="text/javascript" src="../../common/js/sapar.js"></script>   
+</body>
+</html>

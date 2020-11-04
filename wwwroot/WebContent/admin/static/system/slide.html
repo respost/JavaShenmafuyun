@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../common/css/title.css" />
+
+<link href="../css/public.css" rel="stylesheet" type="text/css">
+
+<title>幻灯片广告</title>
+
+</head>
+<body>
+<div id="saper-container">
+           <div class="subfiled clearfix">
+                <h2>幻灯片广告</h2>
+            </div>
+<!--插入内容 start-->
+<div class="mainBox imgModule">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+    <tr>
+       <th>添加幻灯</th>
+       <th>幻灯列表</th>
+     </tr>
+     <tr>
+      <td width="350" valign="top">
+       <form action="show.php?rec=insert" method="post" enctype="multipart/form-data">
+        <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableOnebor">
+         <tr>
+          <td><b>幻灯名称</b>
+			<input type="text" name="show_name"  size="42" class="inpMain" />
+          </td>
+         </tr>
+         <tr>
+          <td><b>幻灯图片</b>
+           <input type="file" name="show_img" size="42" class="inpFlie" />          </td>
+         </tr>
+         <tr>
+          <td><b>链接地址</b>
+           <input type="text" name="show_link" size="42" class="inpMain" />
+          </td>
+         </tr>
+         <tr>
+          <td><b>排序</b>
+			<input type="text" name="sort"  size="42" class="inpMain" placeholder="序号越大，排序越靠前" />
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <input name="submit" class="btn" type="submit" value="提交" />
+          </td>
+         </tr>
+        </table>
+       </form>
+      </td>
+      <td valign="top">
+       <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableOnebor">
+        <tr>
+         <td width="100">幻灯名称</td>
+         <td></td>
+         <td width="50" align="center">排序</td>
+         <td width="80" align="center">操作</td>
+        </tr>
+                <tr>
+         <td><a href="#" target="_blank"><img src="images/banner1.jpg" height="100" /></a></td>
+         <td>广告图片01</td>
+         <td align="center">1</td>
+         <td align="center"><a href="editshow.html?id=1">编辑</a> | <a href="delshow.htmlid=1">删除</a></td>
+        </tr>
+                <tr>
+         <td><a href="#" target="_blank"><img src="images/banner2.jpg" height="100" /></a></td>
+         <td>广告图片02</td>
+         <td align="center">2</td>
+         <td align="center"><a href="editshow.html?id=2">编辑</a> | <a href="delshow.htmlid=2">删除</a></td>
+        </tr>
+                <tr>
+         <td><a href="#" target="_blank"><img src="images/banner3.jpg" height="100" /></a></td>
+         <td>广告图片03</td>
+         <td align="center">3</td>
+         <td align="center"><a href="editshow.html?id=3">编辑</a> | <a href="delshow.htmlid=3">删除</a></td>
+        </tr>
+                <tr>
+         <td><a href="#" target="_blank"><img src="images/banner4.jpg" height="100" /></a></td>
+         <td>广告图片04</td>
+         <td align="center">4</td>
+         <td align="center"><a href="#">编辑</a> | <a href="#">删除</a></td>
+        </tr>
+		                <tr>
+         <td><a href="#" target="_blank"><img src="images/banner5.jpg" height="100" /></a></td>
+         <td>广告图片05</td>
+         <td align="center">5</td>
+         <td align="center"><a href="#">编辑</a> | <a href="#">删除</a></td>
+        </tr>
+               </table>
+      </td>
+     </tr>
+    </table>
+</div>
+<!--插入内容 end--> 
+</div>  
+</body>
+</html>

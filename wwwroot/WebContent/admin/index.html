@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>后台登录</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+	<link rel="stylesheet" type="text/css" href="../layer/theme/default/layer.css">
+
+</head>
+<body>
+
+    <div class="loginmain"></div>
+	<form action="javascript:void(0)" method="post">
+    <div class="row-fluid">
+        <h1>后台管理系统</h1>
+        <p>
+            <label>帐号：<input type="text" value=""  id="userName" /></label>
+        </p>
+        <p>
+            <label>密码：<input type="password" value=""  id="userPwd" /></label>
+        </p>
+        <p class="pcode">
+            <label>验证码：<input type="text"  id="code"  maxlength="5" class="code" /><img src="../VeryfServlet" id="veryfyCode" alt="验证码"  title="点击刷新" class="imgcode"  /></label>
+        </p>
+        <hr/>
+        <p><input type="button" id="admin_login" value=" 登 录 " class="btn" /><input type="button" value=" 取 消 " class="btn" /></p>
+    </div>
+    </form>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="js/chur.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="../layer/layer.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("#veryfyCode").click(function(){	
+			$(this).attr("src","../VeryfServlet?a="+Math.random());
+		});
+		$("#code").focus(function(){		
+			$("#veryfyCode").attr("src","../VeryfServlet?b="+Math.random());
+		});
+	});
+	</script>
+
+</body>
+</html>

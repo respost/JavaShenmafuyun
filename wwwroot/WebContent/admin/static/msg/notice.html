@@ -1,0 +1,104 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" type="text/css" href="../../common/css/title.css" />
+<link rel="stylesheet" type="text/css" href="../../common/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../thirdParty/easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../thirdParty/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="../thirdParty/css/H-ui.admin.css" />
+<title>公告管理</title>
+<style>
+td{font:13px/120% "宋体";padding:5px;}
+a{color:#FFA93E;text-decoration: none;}
+.STYLE3 {color: #339900}
+.STYLE4 {color: #FF0000}
+</style>
+</head>
+<body>
+<div id="saper-container">
+            <div class="subfiled clearfix" >
+               <h2><span>公告管理</span></h2>
+            </div>
+<!--插入内容 start-->
+<table width="100%" align="center"  id=editProduct   idth="100%" >
+  <tr>
+    <td height="24" align="center" nowrap bgcolor="#FFFFFF">
+    <form name="form1" onSubmit="return check_submit();" method="post" action="add.php?">
+
+    <table width="100%" border="1" bgcolor="#FFFFFF" bordercolor="#96B697" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: #225d9c;" width="100%" >
+  <tr>
+    <td  align="left">公告内容：</td>
+    <td colspan="5"  align="left"><textarea  id="msg" name="msg" rows="4" cols="135"></textarea></td>
+  </tr>
+  <tr>
+    <td width="10%" align="left">有效时间：</td>
+    <td width="20%" align="left"><input id="reDate" style="width:200px;"></td>
+    <td width="10%" align="left">是否显示：</td>
+    <td width="20%" align="left"><input name="is_show" type="radio" value="1">
+      <span class="STYLE3">显示</span>&nbsp;&nbsp;
+      <input type="radio" name="is_show" value="0" >
+      <span class="STYLE4">不显示</span></td>
+    <td width="10%" align="left">排序值：</td>
+    <td width="30%" align="left"><input name="sort" type="text" id="sort" value="" size="4" maxlength="3" style="text-align:center;width:50px;height:25px;line-height:25px;">
+      &nbsp;越大越靠前</td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td colspan="5" align="left"><button name="" id="" class="btn btn-success" type="submit">发布</button></td>
+
+  </tr>
+</table>  
+    </form>
+</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC"><tr><td ><table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+  <tr>
+    <td height="24" nowrap bgcolor="#FFFFFF"><table width="100%" border="1" bgcolor="#FFFFFF" bordercolor="#96B697" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: #225d9c;" id=editProduct   idth="100%" >   
+        <tr style="background-color: #EFE">
+		<td width="46" align="center"><strong>序号</strong></td>
+        <td width="120" align="center"><strong>发布时间</strong></td>
+        <td width="120" height="20" align="center"><strong>有效时间</strong></td>
+        <td align="center"><strong>内容</strong></td>
+        <td width="80" align="center"><strong>状态</strong></td>
+        <td width="46" align="center"><strong>编辑</strong></td>
+        <td width="46" align="center"><strong>删除</strong></td>
+      </tr>
+      <tr onMouseOver="this.style.backgroundColor='#EBEBEB'" onMouseOut="this.style.backgroundColor='#FFFFFF'" style="background-color:#FFFFFF;">
+		<td align="center"></td>
+        <td align="center" valign="middle"></td>
+        <td height="20" align="center" valign="middle"></td>
+        <td></td>
+        <td align="center"></td>
+        <td align="center"><a href="add.php?=">编辑</a></td>
+        <td align="center"><a href="add.php?" onClick="return confirm('您确定要删除这条公告吗？');">删除</a></td>
+      </tr>
+
+    </table></td>
+  </tr>
+ 
+</table></td></tr>
+</table>
+
+	<script type="text/javascript" src="../thirdParty/easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="../thirdParty/easyui/jquery.easyui.min.js"></script>
+	<script>
+		$(function(){
+			$('#reDate').datebox().datebox('calendar').calendar({
+				validator: function(date){
+					var now = new Date();
+					var d = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+					return d;
+				}
+			});
+		});
+	</script>
+<!--插入内容 end--> 
+</div> 
+</body>
+</html>

@@ -1,0 +1,120 @@
+@charset "utf-8";
+#tab {
+	font-size: 12px;
+	font-family:Verdana, Geneva, sans-serif;
+	width:500px
+}
+.tabContainer {
+	width:100%;
+	background:url(../images/tab.gif) repeat-x bottom;
+	overflow:hidden;
+}
+.tabContainer li {
+	float:left;
+	margin-right:2px;
+	background:url(../images/tabOff_right.gif) no-repeat right top;
+}
+.tabContainer li a {
+	display:block!important;
+	display:inline-block;
+	padding:0 15px;
+	height:27px;
+	line-height:27px;
+	background:url(../images/tabOff_left.gif) no-repeat left top;
+}
+#tab .tabHead {
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+}
+#tab .tabBody {
+	height: 150px;
+	border-left:#dbdbdb solid 1px;
+	border-right:#dbdbdb solid 1px;
+	background-color: white;
+	overflow: hidden;
+	width:498px;
+	position: relative;
+}
+#tab .tabBody ul, li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#tab .tabBody ul {
+	width: 1500px;
+	position: absolute;
+}
+#tab .tabBody ul li {
+	float: left;
+	width: 500px;
+}
+#tab .tabHead li a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #0099FF;
+}
+#tab .tabCot {
+	width:800px;
+	overflow:hidden;
+	float: left;
+}
+#tab .tabContainer li.currentBtn {
+	background:url(../images/tabOn_right.gif) no-repeat right top;
+}
+#tab .tabContainer li.currentBtn a {
+	height:28px;
+	background:url(../images/tabOn_left.gif) no-repeat left top;
+	color:#434142;
+}
+#tab .modA {
+	margin:10px;
+}
+#tab .modBody {
+	border-left:#dbdbdb solid 1px;
+	border-right:#dbdbdb solid 1px;
+	background-color: white;
+}
+#tab .modTop h3 {
+	padding:0px;
+	margin:0px;
+	height:28px;
+	background:url(../images/modAT.gif) repeat-x left top;
+	color:#2C6A78;
+	font-size:12px;
+	line-height:25px;
+}
+.modTop span.modATL, .modTop span.modATR {
+	float:left;
+	width:4px;
+	height:28px;
+	background:url(../images/bg.gif) no-repeat left top;
+	overflow:hidden;
+}
+.modTop span.modATR {
+	float:right;
+	background:url(../images/bg.gif) no-repeat -4px top;
+}
+.modA #sideNav dd a:hover {
+	background:url(../images/bg.gif) no-repeat left -110px;
+	color:#FFF;
+	text-decoration:none;
+}
+#tab .modBottom {
+	width:100%;
+	height:4px;
+	margin-top:-2px;
+	background:url(../images/modAB.gif) repeat-x left top;
+	overflow:hidden;
+}
+#tab .modBottom span.modABL, .modBottom span.modABR, .modTopB span.modATR, .modTopB span.modATL {
+	float:left;
+	width:4px;
+	height:4px;
+	background:url(../images/bg.gif) no-repeat left -28px;
+	overflow:hidden;
+}
+#tab .modBottom span.modABR {
+	float:right;
+	background:url(../images/bg.gif) no-repeat -4px -28px;
+}

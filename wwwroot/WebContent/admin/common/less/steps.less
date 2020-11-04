@@ -1,0 +1,51 @@
+.steps {
+    height: 46px;
+    border-bottom: 2px solid #E6E6E6;
+    position: relative;
+}
+
+/*宽度根据100%步数*100%*/
+.steps ol li {
+    display: inline;
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #999;
+    font-family: "微软雅黑","华文细黑","黑体",arial;
+}
+
+
+.steps ol li i {
+    display: inline-block;
+    margin-left: 70px;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    background: url("@{imgpath}/ico-circle2.png") no-repeat scroll 0px 0px transparent;
+}
+
+
+.steps ol li {
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #999;
+    font-family: "微软雅黑","华文细黑","黑体",arial;
+}
+
+.steps ol li.active {
+    color: #3E3E3E;
+    border-bottom: 2px solid #FF4700;
+}
+
+.steps ol li.active i {
+    background-image: url("@{imgpath}/ico-circle1.png");
+}

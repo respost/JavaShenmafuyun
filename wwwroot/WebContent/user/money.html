@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>会员充值</title>
+</head>
+<style type="text/css">
+#pay{ width:820px; margin-left:10px; margin-top:10px;}
+#pay a{display: inline-block; text-align: center; margin: 15px; text-decoration: none; border: 1px solid #d5d5d5}
+#pay a span{display: block; padding-left: 30px;}
+#pay a .go_pay{height: 45px;line-height: 45px; padding: 0; border-top: 1px solid #d5d5d5; color: #411701; font-size: 18px; background-color: #f1f1f1}
+#pay a i{width: 116px; height: 116px; background: url("images/icon_p.png") no-repeat; display: inline-block; vertical-align: middle}
+#pay a i.upay{background-position: -4px -128px}
+#pay a i.wxpay{background-position: -128px -4px}
+#pay a i.atm{background-position: -4px -4px}
+#pay a i.zfb{background-position: -128px -128px}
+#pay a em{width: 190px; font-size: 16px; color: #3c3c3c; display: inline-block; vertical-align: middle}
+#pay a b{font-size: 26px; color: #000}
+#pay a:hover{border-color: #00A0E9}
+#pay a:hover b{color: #b44242}
+#pay a:hover .go_pay{color: #fff; background-color:#00A0E9;}
+</style>
+<body>
+		
+                        <div id="pay">
+                        <a href="javascript:void(0);" onclick="goto('wechat.html');">
+                            <span>
+                                <i class="wxpay"></i>
+                                <em><b>微信支付</b><br/>扫二维码充值，自动入账</em>
+                            </span>
+                            <span class="go_pay">去支付</span>
+                        </a>
+                        <a href="javascript:void(0);" onclick="goto('alipay.html');">
+                            <span>
+                                <i class="zfb"></i>
+                                <em><b>支付宝</b><br/>支付宝扫码，立即到账</em>
+                            </span>
+                            <span class="go_pay">去支付</span>
+                        </a>
+                        <a href="javascript:void(0);" onclick="goto('banking.html');">
+                            <span>
+                                <i class="upay"></i>
+                                <em><b>网银充值</b><br/>在线支付，自动入账</em>
+                            </span>
+                            <span class="go_pay">去支付</span>
+                        </a>
+                        <a href="javascript:void(0);" onclick="goto('huikuan.html');">
+                            <span>
+                                <i class="atm"></i>
+                                <em><b>银行转账</b><br/>人工转账，需要审核</em>
+                            </span>
+                            <span class="go_pay">去支付</span>
+                        </a>
+                        </div>
+ <script type="text/javascript" src="../jquery/jquery-1.8.3.min.js"></script> 
+ <script type="text/javascript">
+ function goto(url){
+	 location.href=url;
+ }
+ </script>                       
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" type="text/css" href="../../common/css/title.css" />
+<link rel="stylesheet" type="text/css" href="../../common/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../thirdParty/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="../thirdParty/iconfont/iconfont.css" />
+<title>站内消息</title>
+<style>
+td{font:13px/120% "宋体";padding:5px;}
+a{color:#F37605;text-decoration: none;}
+.STYLE3 {color: #339900}
+.STYLE4 {color: #FF0000}
+.STYLE2 {font-size: 12px}
+input{text-indent:10px;}
+</style>
+</head>
+<body>
+<div id="saper-container">
+            <div class="subfiled clearfix" >
+               <h2>短消息列表</h2>
+            </div>
+<!--插入内容 start-->
+<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+  <div class="text-c" style="margin-top:20px;margin-bottom:10px;"> 
+  会员名称：<input type="text"  class="input-text Wdate" style="width:120px;">&nbsp;&nbsp;
+  消息标题：<input type="text" class="input-text" style="width:250px" placeholder="输入关键词" >	
+		<button type="submit" class="btn btn-success radius" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 模糊查询</button>
+	</div>
+  <tr>
+    <td height="24" bgcolor="#FFFFFF" ><table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+  <tr>
+    <td height="24" nowrap bgcolor="#FFFFFF">
+<table width="100%" border="1" bgcolor="#FFFFFF" bordercolor="#96B697" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: #225d9c;" width="100%" >       
+<tr style="background-color: #EFE" class="t-title"  align="center">
+        <td width="15%"  height="20"><strong>用户名</strong></td>
+        <td width="53%" ><strong><a href="list.php?order=money"></a></strong><strong>标题</strong></td>
+        <td width="16%" ><strong>发送时间</strong></td>
+        <td width="8%" ><strong>状态</strong></td>
+        <td width="8%" ><strong>删除</strong></td>
+        </tr>
+
+  <tr onMouseOver="this.style.backgroundColor='#EBEBEB'" onMouseOut="this.style.backgroundColor='#FFFFFF'" style="background-color:#FFFFFF;">
+    <td  height="20" align="center"></td>
+    <td ></td>
+    <td align="center" ></td>
+    <td align="center" ></td>
+    <td align="center"><a href="" onClick="return confirm('您确定要删除这条短消息吗？');">删除</a></td>
+    </tr>
+
+    </table>
+    </td>
+  </tr>
+</table></td>
+  </tr>
+</table>
+<!--插入内容 end--> 
+</div> 
+</body>
+</html>

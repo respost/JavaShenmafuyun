@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//WebContent/admin/static/manage/role_list.jsp=UTF-8
+encoding//WebContent/admin/static/source/js/code.js=UTF-8
+encoding//WebContent/admin/static/user/user_list.jsp=UTF-8
+encoding//WebContent/js/email.js=UTF-8
+encoding//WebContent/js/foot.js=UTF-8
+encoding//WebContent/js/index.js=UTF-8
+encoding//WebContent/js/login.js=UTF-8
+encoding//WebContent/js/reg.js=UTF-8
+encoding//WebContent/js/tab.js=UTF-8
+encoding//WebContent/js/top.js=UTF-8
+encoding//src/com/qcloud/sms/SmsMultiSender.java=UTF-8
+encoding//src/com/qcloud/sms/SmsSingleSender.java=UTF-8
+encoding//src/com/qcloud/sms/SmsSingleVoiceSender.java=UTF-8
+encoding//src/com/qcloud/sms/SmsStatusPuller.java=UTF-8
+encoding//src/com/qcloud/sms/SmsVoicePromptSender.java=UTF-8
+encoding//src/com/qcloud/sms/SmsVoiceVerifyCodeSender.java=UTF-8

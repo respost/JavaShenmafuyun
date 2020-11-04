@@ -1,0 +1,27 @@
+*{ margin: 0; padding: 0; }
+li { list-style: none; }
+img { focus_border: 0 none; -ms-interpolation-mode: bicubic; }
+.focus_show { width: 870px; height: 400px; position: relative; overflow: hidden; margin: 0 auto; }
+.focus_show .focus_pic { display: block; width: 870px; height: 320px; }
+.focus_show .focus_pic li, .focus_show .focus_pic a, .focus_show .focus_pic img { display: block; width: 870px; height: 320px; }
+.focus_show .focus_pic li { position: absolute; left: 0; top: 0; }
+.focus_show .focus_title { position: absolute; z-index: 1; left: 0; bottom: 80px; overflow: hidden; zoom: 1; width: 870px; height: 30px; background-color: rgba(0,0,0,.8); filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#CC000000',endColorstr='#CC000000'); background-image: url(about:blank); }
+.focus_title { filter: none; }
+.focus_show .focus_title li { width: 590px; padding: 0 0 0 20px; overflow: hidden; word-break: keep-all; word-wrap: keep-all; white-space: nowrap; table-layout: fixed; -o-text-overflow: ellipsis; text-overflow: ellipsis; }
+.focus_show .focus_title li h3 { line-height: 30px; _line-height: 30px; font-size: 16px; font-family: "Microsoft Yahei",Tahoma,Geneva; font-weight: 500; }
+.focus_show .focus_title li h3 a { color: #98e404; }
+.focus_switch { width: 59px; height: 29px; position: absolute; z-index: 2; right: 0px; bottom: 80px; }
+.focus_switch a { float: left; width: 29px; height: 29px; background-image: url(../images/icon_focus_switch.png); background-repeat: no-repeat; cursor: pointer; }
+.focus_switch .icon_prev { background-position: 0 0; margin: 0 1px 0 0; }
+.focus_switch .icon_prev:hover { background-position: -30px 0; }
+.focus_switch .icon_next { background-position: -60px 0; }
+.focus_switch .icon_next:hover { background-position: -90px 0; }
+.focus_show .focus_list { padding: 10px 8px; background: #000; overflow: hidden; height: 60px; }
+.focus_show .focus_list li { width: 60px; height: 60px; float: left; margin: 0 6px 0 5px; position: relative; display: inline; }
+.focus_show .focus_list li a { display: block; width: 60px; height: 60px; }
+.focus_show .focus_list li img { display: block; width: 60px; height: 60px; }
+.focus_show .focus_list li a:hover {background: none; }
+.focus_show .focus_list li a:hover .focus_mask, .focus_show .focus_list .current .focus_mask { display: none; }
+.focus_show .focus_list li .focus_mask { display: block; height: 60px; width: 60px; position: relative; top: -60px; margin: 0 0 -60px; left: 0;  background: #000; opacity: .5; filter: alpha(opacity=50); }
+.focus_show .focus_list li .focus_border { display: none; }
+.focus_show .focus_list .current .focus_border { display: block; height: 5px; width: 60px; font-size: 0; overflow: hidden; position: absolute; left: 0; bottom: 0; background: #98e404; }

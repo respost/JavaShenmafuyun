@@ -1,0 +1,82 @@
+.table{
+	.table-operate{
+		padding-left: 15px;
+		height: 37px;
+		line-height: 37px;
+		background: url("@{imgpath}/toolbarbg.png") repeat-x;
+		border: 1px solid #c1d3de;
+
+		a{
+			float: left;
+			color: #000;
+			margin-right: 20px;
+			padding-left: 20px;
+
+			&:hover,&:focus{
+				text-decoration: none;
+			}
+
+			&.add{
+				background: url("@{imgpath}/addico.png") no-repeat left 10px;
+			}
+
+			&.del{
+				background: url("@{imgpath}/delico.png") no-repeat left 10px;
+			}
+
+			&.edit{
+				background: url("@{imgpath}/edtico.png") no-repeat left 10px;
+			}
+
+			&.count{
+				background: url("@{imgpath}/tjico.png") no-repeat left 10px;
+			}
+
+			&.check{
+				background: url("@{imgpath}/bookico.png") no-repeat left 10px;
+			}
+		}
+	}
+
+	table{
+		width: 100%;
+		border: 1px solid #c1d3de;
+		border-top: none;
+
+
+		thead{
+			tr th{
+				height: 35px;
+				line-height: 35px;
+				border-bottom: 1px solid #c1d3de;
+				background: url("@{imgpath}/tablelistbg.png") repeat-x;
+				font-weight: bold;
+				padding-left: 10px;
+			}
+		}
+
+		tbody {
+
+			tr{
+
+				td {
+					border-left: 1px dotted #c7c7c7;
+					line-height: 30px;
+					padding-left: 9px;
+
+					&:first-child{
+						border-left:none;
+					}
+
+					&.even{
+						background: #EFF6FA;
+					}
+				}
+
+				&:hover{
+					background: #DCF0FC !important;
+				}
+			}
+		}		
+	}
+}

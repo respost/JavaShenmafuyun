@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" type="text/css" href="../../common/css/title.css" />
+<link rel="stylesheet" type="text/css" href="../../common/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../thirdParty/layer/theme/default/layer.css">
+<link rel="stylesheet" type="text/css" href="../thirdParty/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="../thirdParty/css/H-ui.admin.css" />
+<title>站内消息</title>
+<style>
+td{font:13px/120% "宋体";padding:5px;}
+a{color:#F37605;text-decoration: none;}
+.STYLE3 {color: #339900}
+.STYLE4 {color: #FF0000}
+.STYLE2 {font-size: 12px}
+</style>
+</head>
+<body>
+<div id="saper-container">
+            <div class="subfiled clearfix" >
+               <h2><span>站内消息</span></h2>
+            </div>
+<!--插入内容 start-->
+<table width="100%" >
+  <tr>
+    <td height="24" bgcolor="#FFFFFF">
+    <form name="form1"   method="post" action="" onsubmit="return check();">
+    <table width="100%" border="1" bgcolor="#FFFFFF" bordercolor="#96B697" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: #225d9c;" >
+  <tr>
+     <td>消息标题：</td>
+     <td align="left"><input name="msg_title" id="msg_title" type="text" style="width:600px;height:30px;line-height:30px;" value=""/></td>
+  </tr>
+  <tr>
+    <td>消息内容：</td>
+    <td  align="left"><textarea name="msg_info" id="msg_info" rows="9" style="width:600px;"></textarea></td>
+  </tr>
+  <tr>
+    <td>用户名：</td>
+    <td align="left">
+      <textarea name="username" rows="3" id="username" style="width:600px;" placeholder="多个会员，用逗号隔开"></textarea>    
+		<br/><br/> 
+          <input type="radio" name="type" value="login" />
+          在线会员&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="type" value="all" />
+          所有会员&nbsp;&nbsp;&nbsp;&nbsp;
+		  会员组：<select name="group" id="group">
+            <option value="0">请选择会员组</option>
+			<option value="1">普通会员</option>
+			<option value="2">VIP1</option>
+			<option value="3">VIP2</option>
+			<option value="4">VIP3</option>
+			<option value="5">VIP4</option>
+          </select>
+		<br/><br/> 
+        </td>	 
+  </tr>
+
+  <tr>
+    <td width="12%">发布者：</td>
+    <td width="88%" align="left"><input type="text" name="msg_from"  placeholder="这里直接获取用户的姓名" style="width:600px;height:30px;line-height:30px;" /></td>
+    </tr>
+  <tr>
+    <td colspan="2" align="center">&nbsp;</td>
+    </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td align="left"><button name="" id="" class="btn btn-success" type="submit">发布</button><a style="margin-left:30px;" href="stationMsg_list.html">查看短消息记录</a></td>
+  </tr>
+</table>  
+    </form>
+</td>
+  </tr>
+</table>
+<!--插入内容 end--> 
+</div> 
+</body>
+</html>
