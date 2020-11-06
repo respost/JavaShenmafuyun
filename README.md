@@ -9,7 +9,9 @@
 3. 修改src目录下com.smfy.dao.BaseDao.java文件里的数据库信息。
 ## 网站截图：
 首页
+
 ![index.jpg](readme/index.jpg)
 
 后台
+
 ![admin.jpg](readme/admin.jpg)
